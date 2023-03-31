@@ -1,91 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="styles.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>My first CV - Ostrovskiy Egor</title>
+    <title>CV/junior frontend developer/BY</title>
 </head>
 <body>
-<h1>
-    My first CV
-</h1>
-<h2>
-    Hello, my name is Egor and you can see this page with my first CV
-</h2>
-<div>
-   <h3>
-       Информация обо мне:
-   </h3>
-    <p>
-        <b>Меня зовут Егор.
-        Родился и вырос в городе Минске (08.03.1994).
-        Гражданство: Беларусь.</b>
-    </p>
-<!--    Картинка не работает, подробнее объясню сегодня-->
-    <img src="C:\Project\MyCV\123.jpg">
-</div>
-<div>
-    <h3>
-        Мои цели и задачи:
-    </h3>
-    <p>
-        Цель прохождения мною данного курса - получить необходимые навыки в Frontend разработке.
-        Используя полученные навыки получить возможность найти работу в сфере веб-разработки.
-    </p>
-</div>
-<div>
-    <h3>
-        Образование:
-    </h3>
-   <ol>
-       <li>
-           Минский государственный архитектурно-строительный колледж. (Техник-строитель (ПГС))
-       </li>
-       <li>
-           Белорусский национальный технический университет. (Инженер строитель (Автомобильные дороги))
-       </li>
-   </ol>
-</div>
-<div>
-    <h3>Опыт работы:</h3>
-    <p>
-        <i>Опыт работы в строительной сфере в качестве мастера/прораба</i>
-    </p>
-</div>
-<div>
-    <h3>
-        Мои навыки:
-    </h3>
-    <ul>
-        <li>
-            Английский - уровень В1/В2;
-        </li>
-        <li>
-            Хорошие навыки аналитического мышления;
-        </li>
-        <li>
-            Опыт работы на руководящих должностях;
-        </li>
-        <li>
-            Навыки владения пакетом MS Office
-        </li>
-    </ul>
-</div>
-<div>
-<h3>Как связатся со мной:</h3>
-    <p>
-        Номер телефона: +375445978908
-    </p>
-    <ul>
-        <li>
-            <a href="https://vk.com/ega100500">ВКонтакте</a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/profile.php?id=100024575885419">Facebook</a>
-        </li>
-        <li>
-            <a href="https://t.me/astrouski">Telegram</a>
-        </li>
-    </ul>
-</div>
+<article>
+    <header>
+        <h1 class="file_name">CV/junior frontend developer/BY</h1>
+    </header>
+    <aside>
+         <section>
+             <img src="./assets/images/avatar.jpg" width="200" height="200" alt="avatar" title="24e.o.">
+             <h2 class="my_name">EGOR OSTROVSKIY</h2>
+             <p class="aside_text">Frontend developer</p>
+             <ul>
+                 <li>
+                     <a href="https://vk.com/ega100500">VK</a>
+                 </li>
+                 <li>
+                     <a href="https://www.facebook.com/profile.php?id=100024575885419">Facebook</a>
+                 </li>
+                 <li>
+                     <a href="https://t.me/astrouski">Telegram</a>
+                 </li>
+             </ul>
+         </section>
+         <button>Download this CV</button>
+    </aside>
+    <section>
+        <h3 class="section_name">About me</h3>
+        <div>
+              <p class="simple_text">
+                 Hello! I'm Egor Ostrovskiy. This is my first CV. I'm a junior front end developer.
+                 I have no practical skills in real work, but my experience include ...
+                 I studied and worked as an engineer in the construction industry.
+              </p>
+        </div>
+        <div>
+            <h4 class="title-about_me">personal information</h4>
+            <table>
+                <tr>
+                    <td class="left_cell">FULL NAME</td> <td class="right_cell">Egor Ostrovskiy</td>
+                </tr>
+                <tr>
+                    <td class="left_cell">D.O.B.</td> <td class="right_cell"> <time>08 march 1994</time></td>
+                </tr>
+                <tr>
+                    <td class="left_cell">ADDRESS</td> <td class="right_cell">220047, Belarus, Minsk, Ilimskaya 17, 74</td>
+                </tr>
+                <tr>
+                    <td class="left_cell">E-MAIL</td> <td class="right_cell">astrouski1994@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="left_cell">PHONE</td> <td class="right_cell">+375-44-597-89-08</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h4 class="title-about_me">languages</h4>
+            <ul>
+                <li>
+                    English (B1/B2)
+                </li>
+                <li>
+                    Russian (native)
+                </li>
+                <li>
+                    Belorussian (native)
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h3 class="section_name">Work experience</h3>
+        <div>
+            <h4 class="time_frame">2013-2018</h4>
+            <p><abbr title="Public Joint Stock Company 'Minskpromstroy'">JSC 'MPS'</abbr></p>
+            <p class="simple_text">
+                I worked in a general contractor construction company as a foreman,
+                after foreman I held the position of a leading engineer.
+            </p>
+        </div>
+        <div>
+            <h4 class="time_frame">2018-2024</h4>
+            <p><abbr title="Foreign Limited Liability Company 'PERI-framework and scaffolding'">FLLC 'PERI'</abbr></p>
+            <p class="simple_text">
+                I worked in a foreign family company "PERI"
+                as a warehouse employee and warehouse manager (construction sector).
+            </p>
+        </div>
+        <div>
+            <h4 class="time_frame">2023-2024</h4>
+            <p class="simple_text">I studied html/css/nodeJS and prepared a portfolio</p>
+        </div>
+    </section>
+    <section>
+        <h3 class="section_name">Education</h3>
+        <div>
+            <h4 class="time_frame">2009-2013</h4>
+            <p class="simple_text">Сonstruction technician of industrial and civil engineering (full-time education)</p>
+            <p><abbr title="Educational Institution 'Minsk City College of Architecture and Civil Engineering'">EI'MGASK'</abbr></p>
+        </div>
+        <div>
+            <h4 class="time_frame">2013-2019</h4>
+            <p class="simple_text">Сivil engineer of highways and airfields (extramural education)</p>
+            <p><abbr title="Belarusian National Technical University'">BNTU</abbr></p>
+        </div>
+        <div>
+            <h4 class="time_frame">2023-</h4>
+            <p class="simple_text">Frontend developer</p>
+            <p>Training with a mentor</p>
+        </div>
+    </section>
+    <section>
+        <h3 class="section_name">Portfolio</h3>
+
+    </section>
+    <section>
+        <h3 class="section_name">Contact me</h3>
+        <h4 class="small_header">Don't hesitate to contact me</h4>
+        <label> Your Name (required)
+            <input type="text" placeholder="Enter Your Name">
+        </label>
+        <label> Your Email (required)
+            <input type="email" placeholder="Enter Your Email">
+        </label>
+        <label> Subject
+            <input type="text">
+        </label>
+        <label> Your message
+            <textarea></textarea>
+        </label>
+        <button>
+            SEND
+        </button>
+    </section>
+</article>
+<footer class="footer_text">All rights reserved 2023</footer>
 </body>
+
 </html>
