@@ -6,42 +6,51 @@
     <title>CV/junior frontend developer/BY</title>
 </head>
 <body>
-<div>
-    <header>
-        <h1 class="file_name">CV/junior frontend developer/BY</h1>
+<div class="article">
+    <header class="header">
+        <div class="header-block">
+            <h1 class="header-block__name">CV/junior frontend developer/BY</h1>
+        </div>
     </header>
-    <aside>
-         <section>
-             <img src="./assets/images/avatar.jpg" width="200" height="200" alt="avatar" title="24e.o.">
-             <h2 class="my_name">EGOR OSTROVSKIY</h2>
-             <p class="aside_text">Frontend developer</p>
-             <ul>
-                 <li>
+    <aside class="aside">
+         <section class="aside-section">
+             <div class="aside-section__avatar">
+                 <img class="main-avatar" src="./assets/images/avatar.jpg" width="200" height="200" alt="avatar" title="24e.o.">
+             </div>
+             <h2 class="aside-section__flname text-upper">Egor Ostrovskiy</h2>
+             <p class="aside-section__text">Frontend developer</p>
+             <ul class="aside-section__list">
+                 <li class="aside-section__link">
                      <a href="https://vk.com/ega100500">VK</a>
                  </li>
-                 <li>
+                 <li class="aside-section__link">
                      <a href="https://www.facebook.com/profile.php?id=100024575885419">Facebook</a>
                  </li>
-                 <li>
+                 <li class="aside-section__link">
                      <a href="https://t.me/astrouski">Telegram</a>
+                 </li>
+                 <li class="aside-section__link">
+                     <a href="https://github.com/Donatovich">GitHub</a>
                  </li>
              </ul>
          </section>
-         <button>Download this CV</button>
+        <div class="aside-button">
+            <button >Download this CV</button>
+        </div>
     </aside>
-    <main>
-    <section>
-        <h3 class="section_name ">About me</h3>
-        <div>
-              <p class="simple_text">
+    <main class="main">
+    <section class="am-section">
+        <h3 class="am-section__name title_text">About me</h3>
+        <div class="am-section__text_box">
+              <p class="simple_text hello_text">
                  Hello! I'm Egor Ostrovskiy. This is my first CV. I'm a junior front end developer.
                  I have no practical skills in real work, but my experience include ...
                  I studied and worked as an engineer in the construction industry.
               </p>
         </div>
-        <div>
-            <h4 class="title-about_me">personal information</h4>
-            <table>
+        <div class="am-section__box">
+            <h4 class="am-box__name text-upper">Personal information</h4>
+            <table class="am-box__table" >
                 <tr>
                     <td class="left_cell">FULL NAME</td> <td class="right_cell">Egor Ostrovskiy</td>
                 </tr>
@@ -59,90 +68,111 @@
                 </tr>
             </table>
         </div>
-        <div>
-            <h4 class="title-about_me">languages</h4>
-            <ul>
-                <li>
-                    English (B1/B2)
-                </li>
-                <li>
-                    Russian (native)
-                </li>
-                <li>
-                    Belorussian (native)
-                </li>
-            </ul>
+        <div class="am-section__list">
+            <h4 class="am-box__name text-upper">Languages</h4>
+            <div class="am-list__box">
+                 <ul class="am-list">
+                     <li>English (B1/B2)</li>
+                     <li>Russian (native)</li>
+                     <li>Belorussian (native)</li>
+                 </ul>
+            </div>
         </div>
     </section>
     <section class="experience-section">
         <h3 class="experience-section__name title_text">Work experience</h3>
-        <div>
-            <h4 class="time_frame">2013-2018</h4>
-            <p><abbr title="Public Joint Stock Company 'Minskpromstroy'">JSC 'MPS'</abbr></p>
+        <div class="experience-section__box">
+            <h4 class="experience-section__timeframe">2013-2018</h4>
+            <p class="abbr-style"><abbr title="Public Joint Stock Company 'Minskpromstroy'">JSC 'MPS'</abbr></p>
             <p class="simple_text">
                 I worked in a general contractor construction company as a foreman,
                 after foreman I held the position of a leading engineer.
             </p>
         </div>
-        <div>
-            <h4 class="time_frame">2018-2024</h4>
-            <p><abbr title="Foreign Limited Liability Company 'PERI-framework and scaffolding'">FLLC 'PERI'</abbr></p>
+        <div class="experience-section__box">
+            <h4 class="experience-section__timeframe">2018-2024</h4>
+            <p><abbr class="abbr-style" title="Foreign Limited Liability Company 'PERI-framework and scaffolding'">FLLC 'PERI'</abbr></p>
             <p class="simple_text">
                 I worked in a foreign family company "PERI"
                 as a warehouse employee and warehouse manager (construction sector).
             </p>
         </div>
-        <div>
-            <h4 class="time_frame">2023-2024</h4>
+        <div class="experience-section__box">
+            <h4 class="experience-section__timeframe">2023-2024</h4>
             <p class="simple_text">I studied html/css/nodeJS and prepared a portfolio</p>
         </div>
     </section>
-    <section>
-        <h3 class="section_name">Education</h3>
+    <section class="ed-section">
+        <h3 class="ed-section__name title_text">Education</h3>
         <div>
-            <h4 class="time_frame">2009-2013</h4>
+            <h4 class="ed-section__timeframe">2009-2013</h4>
             <p class="simple_text">Сonstruction technician of industrial and civil engineering (full-time education)</p>
-            <p><abbr title="Educational Institution 'Minsk City College of Architecture and Civil Engineering'">EI'MGASK'</abbr></p>
+            <p><abbr class="abbr-style" title="Educational Institution 'Minsk City College of Architecture and Civil Engineering'">EI'MGASK'</abbr></p>
         </div>
         <div>
-            <h4 class="time_frame">2013-2019</h4>
+            <h4 class="ed-section__timeframe">2013-2019</h4>
             <p class="simple_text">Сivil engineer of highways and airfields (extramural education)</p>
-            <p><abbr title="Belarusian National Technical University'">BNTU</abbr></p>
+            <p><abbr class="abbr-style" title="Belarusian National Technical University'">BNTU</abbr></p>
         </div>
         <div>
-            <h4 class="time_frame">2023-</h4>
+            <h4 class="ed-section__timeframe">2023-</h4>
             <p class="simple_text">Frontend developer</p>
-            <p>Training with a mentor</p>
+            <p class="simple_text">Training with a mentor</p>
         </div>
     </section>
-    <section>
-        <h3 class="section_name">Portfolio</h3>
-
+    <section class="portfolio-section">
+        <h3 class="portfolio-section__name title_text">Portfolio</h3>
+        <div class="portfolio-section__pic1">
+            <img src="./assets/images/witcher.jpg" width="470" height="350" alt="Gerald from Rivia" title="">
+        </div>
+        <div class="portfolio-section__pic2">
+            <img src="./assets/images/hunter.jpg" width="300" height="350" alt="Hun350" title="">
+        </div>
+        <div class="portfolio-section__pic3">
+            <img src="./assets/images/shepard.jpg" width="470" height="350" alt="John Shepard" title="">
+        </div>
+        <div class="portfolio-section__pic4">
+            <img src="./assets/images/готика.jpg" width="300" height="350" alt="Noname" title="">
+        </div>
+        <p></p>
     </section>
-    <section>
-        <form class="contact-form">
-        <h3 class="contact-form__name title_text">Contact me</h3>
-        <h4 class="contact-form__header">Don't hesitate to contact me</h4>
-        <label class="contact-form"> Your Name (required)
-            <input type="text" placeholder="Enter Your Name">
-        </label>
-        <label> Your Email (required)
-            <input type="email" placeholder="Enter Your Email">
-        </label>
-        <label> Subject
-            <input type="text">
-        </label>
-        <label> Your message
-            <textarea></textarea>
-        </label>
-        <button>
-            SEND
-        </button>
-        </form>
+    <section class="contact-section">
+        <h3 class="contact-section__name title_text">Contact me</h3>
+        <div class="contact-section__form">
+            <h4 class="contact-section__header">Please, don't hesitate to contact me</h4>
+            <form>
+            <div class="contact-form__box">
+                 <label class="contact-form__input"> Your Name (required)
+                     <input align="middle" size="80" type="text" placeholder="Enter Your Name">
+                 </label>
+            </div>
+            <div class="contact-form__box">
+                 <label class="contact-form__input"> Your Email (required)
+                      <input size="80" type="email" placeholder="Enter Your Email">
+                 </label>
+            </div>
+            <div class="contact-form__box">
+                 <label class="contact-form__input"> Subject
+                      <input size="80" type="text">
+                 </label>
+            </div>
+            <div class="contact-form__box">
+                 <label class="contact-form__textarea"> Your message
+                      <textarea cols="75em" rows="10em"></textarea>
+                 </label>
+            </div>
+            <div class="contact-form__box">
+                 <button class="contact-form__button">
+                     SEND
+                 </button>
+            </div>
+          </form>
+        </div>
     </section>
     </main>
+    <footer class="footer">
+        <p class="footer-text">All rights reserved 2023</p>
+    </footer>
 </div>
-<footer class="footer_text">All rights reserved 2023</footer>
 </body>
-
 </html>
