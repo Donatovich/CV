@@ -31,7 +31,7 @@
     </aside>
     <main>
     <section>
-        <h3 class="section_name">About me</h3>
+        <h3 class="section_name ">About me</h3>
         <div>
               <p class="simple_text">
                  Hello! I'm Egor Ostrovskiy. This is my first CV. I'm a junior front end developer.
@@ -74,8 +74,8 @@
             </ul>
         </div>
     </section>
-    <section>
-        <h3 class="section_name">Work experience</h3>
+    <section class="experience-section">
+        <h3 class="experience-section__name title_text">Work experience</h3>
         <div>
             <h4 class="time_frame">2013-2018</h4>
             <p><abbr title="Public Joint Stock Company 'Minskpromstroy'">JSC 'MPS'</abbr></p>
@@ -120,9 +120,10 @@
 
     </section>
     <section>
-        <h3 class="section_name">Contact me</h3>
-        <h4 class="small_header">Don't hesitate to contact me</h4>
-        <label> Your Name (required)
+        <form class="contact-form">
+        <h3 class="contact-form__name title_text">Contact me</h3>
+        <h4 class="contact-form__header">Don't hesitate to contact me</h4>
+        <label class="contact-form"> Your Name (required)
             <input type="text" placeholder="Enter Your Name">
         </label>
         <label> Your Email (required)
@@ -137,6 +138,7 @@
         <button>
             SEND
         </button>
+        </form>
     </section>
     </main>
 </div>

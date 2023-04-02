@@ -1,9 +1,17 @@
-.my_name{
+.my_name {
     font-size: 30px;
     font-weight: 300;
     color: green;
 }
 
-.simple_text{
+.simple_text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, sans-serif;
+}
 
+.title_text {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
 }
