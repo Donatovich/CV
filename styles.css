@@ -1,5 +1,4 @@
 :root {
-    /*colors*/
     --bg-color: #121f26;
 
     /* Padding Variables (for example) */
@@ -25,10 +24,6 @@ body {
     background-color: var(--bg-color);
 }
 
-.text-upper {
-    text-transform: uppercase;
-}
-
 .simple_text {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-normal);
@@ -36,22 +31,23 @@ body {
 }
 
 .title_text {
-    font-size: 2em;
-    font-weight: 600;
-    font-family: Arial, sans-serif;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-default);
     text-transform: uppercase
 }
 
 .hello_text {
     font-size: 1.5em;
-    font-weight: 400;
-    font-family: Arial, sans-serif;
+    font-weight: var(--font-weight-normal);
+    font-family: var(--font-family-default);
 }
 
-.am-box__name {
+.about-box__name {
     font-size: 1.5em;
     font-weight: 400;
     font-family: Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 .header-block__name {
@@ -80,12 +76,14 @@ body {
     padding: 1em;
 }
 
-.aside-section__flname {
+.aside-section__fullname {
     text-align: center;
     color: whitesmoke;
     font-family:'Aldrich', sans-serif;
     font-size:1.2em ;
     font-weight: 800;
+    text-transform: uppercase;
+
 }
 
 .aside-section__text {
@@ -121,49 +119,60 @@ body {
     color: whitesmoke;
 }
 
-.am-section {
+.about-section {
+    width: 65em;
+    height: 30em;
     background-color: #313c42;
     margin: 1em 5em 1em 1em;
-    padding: 1em 1em 16em;
+    padding: 1em;
 }
 
 .experience-section {
+    width: 65em;
+    height: 35em;
     background-color: #313c42;
     margin: 1em 5em 1em 1em;
     padding: 1em;
 }
 
 .ed-section {
+    width: 65em;
+    height: 35em;
     background-color: #313c42;
     margin: 1em 5em 1em 1em;
     padding: 1em;
 }
 
 .portfolio-section {
+    width: 65em;
+    height: 61em;
     background-color: #313c42;
     margin: 1em 5em 1em 1em;
     padding: 1em;
 }
 
 .contact-section {
+    width: 65em;
+    height: 40em;
     background-color: #313c42;
     margin: 1em 5em 1em 1em;
     padding: 1em ;
+    align-items: center;
 }
 
-.am-section__box {
+.about-section__box {
     float: left;
     font-size: 1em;
     font-weight: 400;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
-.am-section__list {
+.about-section__list {
     float: right;
     padding-right: 5em;
     font-size: 1em;
     font-weight: 400;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family-default);
 }
 
 input,
@@ -181,7 +190,8 @@ label {
 }
 
 .contact-section__form {
-    padding-left: 8em;
+    padding-left: 15em;
+
 }
 
 .contact-form__input {
@@ -192,11 +202,6 @@ label {
     font-size: 1.5em;
     font-weight: 400;
     font-family: Arial, sans-serif;
-}
-
-.portfolio-section {
-    padding-bottom: 50em;
-
 }
 
 .portfolio-section__pic1 {
@@ -236,7 +241,7 @@ label {
     font-family: Tahoma, sans-serif;
 }
 
-.am-box__table {
+.about-box__table {
     border-spacing: 0.3em;
 }
 
