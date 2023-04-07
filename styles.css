@@ -157,7 +157,7 @@ body {
     background-color: #313c42;
     margin: 1em 5em 1em 1em;
     padding: 1em ;
-    align-items: center;
+
 }
 
 .about-section__box {
@@ -190,7 +190,10 @@ label {
 }
 
 .contact-section__form {
-    padding-left: 15em;
+    padding-left: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -245,9 +248,26 @@ label {
     border-spacing: 0.3em;
 }
 
+/*@media screen and (max-width: 768px) {*/
+/*.contact-section {*/
+/*    width: 32em;*/
+/*    background-color: red;*/
+/*}*/
+/*}*/
 
+/*.container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
 
-
-
-
+/*.item {*/
+/*    border: 3px solid red;*/
+/*    padding: 10px;*/
+/*    margin: 10px;*/
+/*    color: whitesmoke;*/
+/*    justify-content: center;*/
+/*    !*width: 10em;*!*/
+/*    height: 15em;*/
+/*}*/
 
