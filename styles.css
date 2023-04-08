@@ -190,7 +190,7 @@ label {
 }
 
 .contact-section__form {
-    padding-left: 0em;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;

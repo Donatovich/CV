@@ -1,0 +1,27 @@
+/*процентаж не стандарнтный потому шо задан gap*/
+.item {
+    width: 32%;
+    background-color: red;
+    border: solid;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .item {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .item {
+        width: 100%;
+    }
+}
