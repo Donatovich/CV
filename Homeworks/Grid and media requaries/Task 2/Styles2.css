@@ -1,0 +1,102 @@
+:root {
+    font-family: "Franklin Gothic Book";
+    font-size: 1.5em;
+    background-color: #777777;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2em;
+}
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    height: 100%;
+    width: 99%;
+    border: 5px solid black;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    height: 100%;
+    width: 99%;
+    border: 1px dotted black;
+}
+
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 4mm ridge rgba(211, 220, 50, .6);
+    padding: 2px;
+}
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+button {
+    font-size: 0.7em;
+    padding: 0.5em 0.5em;
+    color: black;
+    border: 3px solid red;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1FA184;
+}
+
+button:active {
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 0;
+    border: 5px dotted green;
+}
+
+a:hover {
+    font-family: cursive;
+}
+
+textarea {
+    background-color: #777777;
+    max-width: 100%;
+    border: 2px solid red;
+    border-radius: 10px;
+    transition: background-color 0.3s
+}
+
+textarea:focus {
+    background-color: white;
+}
+
+textarea:hover {
+    background-color: #b5b3b3;
+}
+
+h2:before {
+    content: "*";
+}
+
+@media screen and (max-width: 800px){
+.body {
+    display: grid;
+}
+    .sidebar {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        min-width: 100px;
+    }
+    .content {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        min-width: 400px;
+    }
+}
