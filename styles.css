@@ -20,6 +20,10 @@
     --font-family-default: Arial, sans-serif;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+}
 body {
     background-color: var(--bg-color);
 }
@@ -74,6 +78,7 @@ body {
 .aside-section {
     background-color: #1FA184;
     padding: 1em;
+    margin: 1em;
 }
 
 .aside-section__fullname {
@@ -106,7 +111,7 @@ body {
     background-color: #313c42;
     text-align: center;
     padding: 1em;
-    margin: 0;
+    margin: 1em;
 
 }
 
@@ -114,48 +119,51 @@ body {
     border-radius: 50%;
 }
 
+/*.aside-main__box {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(2, 100vh);*/
+/*    justify-content: center;*/
+/*}*/
 .main {
-    margin-left:15em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     color: whitesmoke;
+    margin-right: 15em;
 }
 
 .about-section {
-    width: 65em;
-    height: 30em;
+    width: 70%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em;
 }
 
 .experience-section {
-    width: 65em;
-    height: 35em;
+    width: 70%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em;
 }
 
 .ed-section {
-    width: 65em;
-    height: 35em;
+    width: 70%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em;
 }
 
 .portfolio-section {
-    width: 65em;
-    height: 61em;
+    width: 70%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em;
 }
 
 .contact-section {
-    width: 65em;
-    height: 40em;
+    width: 70%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em ;
 
 }
@@ -207,23 +215,32 @@ label {
     font-family: Arial, sans-serif;
 }
 
+.portfolio-section__pic-box {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 2em;
+    justify-content: center;
+    min-height: 50vh;
+    min-width: 50vw;
+}
+
 .portfolio-section__pic1 {
-    float: left;
+    /*float: left;*/
     border: solid;
 }
 
 .portfolio-section__pic2 {
-    float: right;
+    /*float: right;*/
     border: solid;
 }
 
 .portfolio-section__pic3 {
-    float: left;
+    /*float: left;*/
     border: solid;
 }
 
 .portfolio-section__pic4 {
-    float: right;
+    /*float: right;*/
     border: solid;
 }
 
