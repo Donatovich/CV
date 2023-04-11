@@ -70,15 +70,24 @@ body {
     color: whitesmoke;
 }
 
+.aside-main__box {
+    display: grid;
+    grid-template-columns: 300px 1fr 100px;
+}
+
 .aside {
     position: fixed;
-    margin: 0;
+    width: 300px;
+    justify-items: center;
 }
 
 .aside-section {
     background-color: #1FA184;
     padding: 1em;
     margin: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .aside-section__fullname {
@@ -112,11 +121,27 @@ body {
     text-align: center;
     padding: 1em;
     margin: 1em;
+}
+.aside-button__download {
+    font-size: 1.2em;
+    padding: 0.5em 0.5em;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+.aside-button__download:hover {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
 }
 
 .main-avatar {
     border-radius: 50%;
+
 }
 
 /*.aside-main__box {*/
@@ -127,41 +152,49 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     color: whitesmoke;
-    margin-right: 15em;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /*margin-right: 15em;*/
 }
 
 .about-section {
-    width: 70%;
+    width: 90%;
     background-color: #313c42;
     margin: 1em;
     padding: 1em;
+
+}
+.about-section__inform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .experience-section {
-    width: 70%;
+    width: 90%;
     background-color: #313c42;
     margin: 1em;
     padding: 1em;
 }
 
 .ed-section {
-    width: 70%;
+    width: 90%;
     background-color: #313c42;
     margin: 1em;
     padding: 1em;
 }
 
 .portfolio-section {
-    width: 70%;
+    width: 90%;
     background-color: #313c42;
     margin: 1em;
     padding: 1em;
 }
 
 .contact-section {
-    width: 70%;
+    width: 90%;
     background-color: #313c42;
     margin: 1em;
     padding: 1em ;
@@ -195,8 +228,21 @@ label {
 
 .contact-form__button {
     margin-top: 2em;
+    font-size: 0.7em;
+    padding: 0.5em 0.5em;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.contact-form__button:hover {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+}
 .contact-section__form {
     padding-left: 0;
     display: flex;
@@ -288,3 +334,16 @@ label {
 /*    height: 15em;*/
 /*}*/
 
+@media screen and (max-width: 1000px){
+    .about-section__inform {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    /*.portfolio-section__pic-box {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: 90%;*/
+    /*    height: 50%;*/
+    /*}*/
+
+}
