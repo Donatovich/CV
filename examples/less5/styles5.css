@@ -1,0 +1,78 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat( 3, 100px);
+    /*grid-template-rows: repeat( 4, );*/
+    margin: 0 auto;
+    justify-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+    gap: 10px;
+    min-height: 100vh;
+    min-width: 99vw;
+    /*grid-template-areas: "A " "A" "A"*/
+    /*                    "B B B B"*/
+    /*                    "C C C C";*/
+
+}
+.box1{
+    grid-column-start: 1 ;
+    grid-column-end: 3 ;
+}
+
+.box2 {
+    grid-column-start: 1 ;
+    grid-column-end: 4 ;
+
+}
+
+.box3{
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;
+
+}
+
+.box4{
+    grid-column-start: 2 ;
+    grid-column-end: 3 ;
+}
+
+.box5{
+    grid-column-start: 3 ;
+    grid-column-end: 4 ;
+}
+
+.box6{
+    grid-column-start: 2 ;
+    grid-column-end: 3 ;
+
+}
+.button{
+    font-size: 1em;
+    padding: 0.5em 1em;
+    color: black;
+    border: 1px solid red;
+    border-radius: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.button:hover{
+    background-color: #b307e3;
+
+}
+.button:active{
+    background-color: aqua;
+}
+.input{
+    padding: 10px;
+    background-color: antiquewhite;
+
+}
+.input:focus{
+    border: 3px solid red;
+}
+
+.container  div{
+    border: 3px solid red;
+}

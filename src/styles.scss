@@ -21,6 +21,10 @@
     --font-family-default: Arial, sans-serif;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+}
 body {
     background-color: var(--bg-color);
 }
@@ -52,13 +56,22 @@ body {
 }
 
 .header-block__name {
+    position: relative;
     font-size: 2em;
     font-weight: 600;
     text-align: center;
     font-family: "Comic Sans MS", sans-serif;
     color: whitesmoke;
+}
 
+.header-block__name::before {
+    content: "✌";
+    margin-right: 3px;
+}
 
+.header-block__name::after {
+    content: "㋛";
+    margin-left: 7px;
 }
 
 .footer {
@@ -67,14 +80,24 @@ body {
     color: whitesmoke;
 }
 
+.aside-main__box {
+    display: grid;
+    grid-template-columns: 300px 1fr 100px;
+}
+
 .aside {
     position: fixed;
-    margin: 0;
+    width: 300px;
+    justify-items: center;
 }
 
 .aside-section {
     background-color: #1FA184;
     padding: 1em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .aside-section__fullname {
@@ -107,56 +130,83 @@ body {
     background-color: #313c42;
     text-align: center;
     padding: 1em;
-    margin: 0;
+    margin: 1em;
+}
+.aside-button__download {
+    font-size: 1.2em;
+    padding: 0.5em 0.5em;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+.aside-button__download:hover {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
 }
 
 .main-avatar {
     border-radius: 50%;
+
 }
 
+/*.aside-main__box {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(2, 100vh);*/
+/*    justify-content: center;*/
+/*}*/
 .main {
-    margin-left:15em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: whitesmoke;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /*margin-right: 15em;*/
 }
 
 .about-section {
-    width: 65em;
-    height: 30em;
+    width: 90%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em;
+
+}
+.about-section__inform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .experience-section {
-    width: 65em;
-    height: 35em;
+    width: 90%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em;
 }
 
 .ed-section {
-    width: 65em;
-    height: 35em;
+    width: 90%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em;
 }
 
 .portfolio-section {
-    width: 65em;
-    height: 61em;
+    width: 90%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em;
 }
 
 .contact-section {
-    width: 65em;
-    height: 40em;
+    width: 90%;
     background-color: #313c42;
-    margin: 1em 5em 1em 1em;
+    margin: 1em;
     padding: 1em ;
 
 }
@@ -188,14 +238,32 @@ label {
 
 .contact-form__button {
     margin-top: 2em;
+    font-size: 0.7em;
+    padding: 0.5em 0.5em;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.contact-form__button:hover {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+}
 .contact-section__form {
     padding-left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+}
+
+h3 {
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .contact-form__input {
@@ -208,23 +276,32 @@ label {
     font-family: Arial, sans-serif;
 }
 
+.portfolio-section__pic-box {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 2em;
+    justify-content: center;
+    min-height: 50vh;
+    min-width: 50vw;
+}
+
 .portfolio-section__pic1 {
-    float: left;
+    /*float: left;*/
     border: solid;
 }
 
 .portfolio-section__pic2 {
-    float: right;
+    /*float: right;*/
     border: solid;
 }
 
 .portfolio-section__pic3 {
-    float: left;
+    /*float: left;*/
     border: solid;
 }
 
 .portfolio-section__pic4 {
-    float: right;
+    /*float: right;*/
     border: solid;
 }
 
@@ -272,3 +349,16 @@ label {
 /*    height: 15em;*/
 /*}*/
 
+@media screen and (max-width: 1000px){
+    .about-section__inform {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    /*.portfolio-section__pic-box {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: 90%;*/
+    /*    height: 50%;*/
+    /*}*/
+
+}

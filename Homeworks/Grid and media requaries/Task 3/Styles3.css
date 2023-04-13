@@ -1,0 +1,84 @@
+:root {
+    font-weight: normal;
+    font-size: 1em;
+    font-family: Algerian, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.header {
+    height: 7em;
+    width: 100%;
+}
+
+.article {
+    height: 40em;
+    width: 100%;
+}
+
+.footer {
+    height: 3em;
+    width: 100%;
+}
+
+.standard-border {
+    border: 3px solid black;
+}
+.header-text {
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.aside {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    align-content: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.card1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 400px;
+    width: 400px;
+    border: 5px solid red;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.card2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 400px;
+    width: 400px;
+    border: 5px solid green;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+h4 {
+    text-align: center;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em;
+}

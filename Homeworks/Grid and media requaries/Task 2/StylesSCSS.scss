@@ -1,0 +1,131 @@
+//переменная (создание переменных)
+$font-main: "Franklin Gothic Book, sans-serif";
+//миксины (для создания переиспользованных блоков)
+@mixin grid-width($start, $end) {
+  grid-column-start: $start;
+  grid-column-end: $end;
+}
+@mixin border($size, $color){
+  border: $size solid $color;
+}
+@mixin active-hover{
+  &:active {
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 0;
+    border: 5px dotted green;
+  }
+  //можно и добавить @mixin active-hover
+  &:hover {
+    background-color: #1FA184;
+  }
+}
+// & - амперсант
+//вложенность (что то типо того)
+.class{
+  div {
+    p {
+
+    }
+  }
+}
+//Math
+
+
+
+
+
+
+
+
+:root {
+  font-family: $font-main;
+  font-size: 1.5em;
+  background-color: #777777;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2em;
+}
+.header {
+  @include grid-width(1,3);
+  @include border(5px, #070707);
+  text-align: center;
+  height: 100% -20px;
+  width: 99%;
+}
+
+.footer {
+  @include grid-width(1, 3);
+  text-align: center;
+  height: 100%;
+  width: 99%;
+  border: 1px dotted black;
+}
+
+.sidebar {
+  @include grid-width(1, 2);
+  border: 4mm ridge rgba(211, 220, 50, .6);
+  padding: 2px;
+}
+
+.content {
+  @include grid-width(2, 3);
+}
+
+button {
+  @include border(3px, red);
+  font-size: 0.7em;
+  padding: 0.5em 0.5em;
+  color: black;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button {
+  @include active-hover;
+}
+
+a:hover {
+  font-family: cursive;
+}
+
+textarea {
+  @include border(2, red);
+  background-color: #777777;
+  max-width: 100%;
+  border-radius: 10px;
+  transition: background-color 0.3s
+}
+
+textarea:focus {
+  background-color: white;
+}
+
+textarea:hover {
+  background-color: #b5b3b3;
+}
+
+h2:before {
+  content: "*";
+}
+
+@media screen and (max-width: 800px) {
+  .body {
+    display: grid;
+  }
+  .sidebar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    min-width: 100px;
+  }
+  .content {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    min-width: 400px;
+  }
+}
