@@ -1,38 +1,17 @@
 {
-  "name": "cvs",
-  "version": "1.0.0",
-  "description": "---\r ### Образцы для CV\r - https://certy.px-lab.com/developer/#about  - выбрали этот\r - https://lmpixels.com/wp/breezycv-wp-lin/demo7-fw-dark/#about-me\r - https://lmpixels.com/wp/aveo/#home\r ---",
-  "main": "index.js",
-  "directories": {
-    "example": "examples"
-  },
+  "name": "cv",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Donatovich/CV.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Donatovich/CV/issues"
-  },
-  "homepage": "https://github.com/Donatovich/CV#readme",
   "devDependencies": {
-    "browser-sync": "^2.29.1",
-    "del": "^7.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-livereload": "^4.0.2",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.62.0"
+    "vite": "^4.2.0"
   },
   "dependencies": {
-    "gulp-imagemin": "^8.0.0"
+    "sass": "^1.62.0"
   }
 }

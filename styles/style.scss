@@ -1,0 +1,366 @@
+
+:root {
+  --bg-color: #121f26;
+
+  /* Padding Variables (for example) */
+  --padding-small: 0.5 em;
+  --padding-medium: 1em;
+  --padding-large: 1.25em;
+
+  /* Font Size Variables */
+  --font-size-small: 0.75em;
+  --font-size-medium: 1em;
+  --font-size-large: 2em;
+
+  /* Font Weight Variables */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+
+  /*Font family variables */
+  --font-family-default: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+body {
+  background-color: var(--bg-color);
+}
+
+.simple_text {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-family-default);
+}
+
+.title_text {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-default);
+  text-transform: uppercase
+}
+
+.hello_text {
+  font-size: 1.5em;
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-family-default);
+}
+
+.about-box__name {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.header-block__name {
+  position: relative;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+  color: whitesmoke;
+}
+
+.header-block__name::before {
+  content: "✌";
+  margin-right: 3px;
+}
+
+.header-block__name::after {
+  content: "㋛";
+  margin-left: 7px;
+}
+
+.footer {
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+  color: whitesmoke;
+}
+
+.aside-main__box {
+  display: grid;
+  grid-template-columns: 300px 1fr 100px;
+}
+
+.aside {
+  position: fixed;
+  width: 300px;
+  justify-items: center;
+}
+
+.aside-section {
+  background-color: #1FA184;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aside-section__fullname {
+  text-align: center;
+  color: whitesmoke;
+  font-family:'Aldrich', sans-serif;
+  font-size:1.2em ;
+  font-weight: 800;
+  text-transform: uppercase;
+
+}
+
+.aside-section__text {
+  text-align: center;
+  color: #b5b3b3;
+  font-size:1.5em ;
+  font-weight: 700;
+}
+
+.aside-section__list {
+  margin-bottom: 0;
+  padding-left: 0;
+  text-align: center;
+  list-style-type: none;
+  font-size:1.2em ;
+  font-weight: 800;
+}
+
+.aside-button {
+  background-color: #313c42;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+.aside-button__download {
+  font-size: 1.2em;
+  padding: 0.5em 0.5em;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.aside-button__download:hover {
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+
+.main-avatar {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/*.aside-main__box {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(2, 100vh);*/
+/*    justify-content: center;*/
+/*}*/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: whitesmoke;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  /*margin-right: 15em;*/
+}
+
+.about-section {
+  width: 90%;
+  background-color: #313c42;
+  margin: 1em;
+  padding: 1em;
+
+}
+.about-section__inform {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.experience-section {
+  width: 90%;
+  background-color: #313c42;
+  margin: 1em;
+  padding: 1em;
+}
+
+.ed-section {
+  width: 90%;
+  background-color: #313c42;
+  margin: 1em;
+  padding: 1em;
+}
+
+.portfolio-section {
+  width: 90%;
+  background-color: #313c42;
+  margin: 1em;
+  padding: 1em;
+}
+
+.contact-section {
+  width: 90%;
+  background-color: #313c42;
+  margin: 1em;
+  padding: 1em ;
+
+}
+
+.about-section__box {
+  float: left;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: var(--font-family-default);
+}
+
+.about-section__list {
+  float: right;
+  padding-right: 5em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: var(--font-family-default);
+}
+
+input,
+label {
+  display: block;
+}
+
+textarea,
+label {
+  display: block;
+}
+
+.contact-form__button {
+  margin-top: 2em;
+  font-size: 0.7em;
+  padding: 0.5em 0.5em;
+  color: whitesmoke;
+  border: 3px solid whitesmoke;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form__button:hover {
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
+.contact-section__form {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h3 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.contact-form__input {
+  padding-bottom: 2em;
+}
+
+.contact-section__header {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+}
+
+.portfolio-section__pic-box {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  gap: 2em;
+  justify-content: center;
+  min-height: 50vh;
+  min-width: 50vw;
+}
+
+.portfolio-section__pic1 {
+  /*float: left;*/
+  border: solid;
+}
+
+.portfolio-section__pic2 {
+  /*float: right;*/
+  border: solid;
+}
+
+.portfolio-section__pic3 {
+  /*float: left;*/
+  border: solid;
+}
+
+.portfolio-section__pic4 {
+  /*float: right;*/
+  border: solid;
+}
+
+.ed-section__timeframe {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+}
+
+.experience-section__timeframe {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+}
+.abbr-style {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: Tahoma, sans-serif;
+}
+
+.about-box__table {
+  border-spacing: 0.3em;
+}
+
+/*@media screen and (max-width: 768px) {*/
+/*.contact-section {*/
+/*    width: 32em;*/
+/*    background-color: red;*/
+/*}*/
+/*}*/
+
+/*.container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.item {*/
+/*    border: 3px solid red;*/
+/*    padding: 10px;*/
+/*    margin: 10px;*/
+/*    color: whitesmoke;*/
+/*    justify-content: center;*/
+/*    !*width: 10em;*!*/
+/*    height: 15em;*/
+/*}*/
+
+@media screen and (max-width: 1000px){
+  .about-section__inform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  /*.portfolio-section__pic-box {*/
+  /*    display: grid;*/
+  /*    grid-template-columns: 90%;*/
+  /*    height: 50%;*/
+  /*}*/
+
+}
