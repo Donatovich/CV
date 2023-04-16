@@ -1,39 +1,8 @@
-@mixin button-hover {
-  background-color: whitesmoke;
-  color: black;
-  font-weight: bold;
-}
-
-@mixin padding-margin($padding, $margin) {
-  padding: $padding;
-  margin: $margin;
-}
-
-@mixin default-text {
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-normal);
-  font-family: var(--font-family-default);
-}
-:root {
-  --bg-color: #121f26;
-  /* Padding Variables (for example) */
-  --padding-small: 0.5 em;
-  --padding-medium: 1em;
-  --padding-large: 1.25em;
-  /* Font Size Variables */
-  --font-size-small: 0.75em;
-  --font-size-medium: 1em;
-  --font-size-large: 1.5em;
-  /* Font Weight Variables */
-  --font-weight-light: 300;
-  --font-weight-normal: 400;
-  --font-weight-bold: 600;
-  /*Font family variables */
-  --font-family-default: Arial, sans-serif;
-}
+@import "--variables";
+@import "--mixins";
 
 body {
-  background-color: var(--bg-color);
+  background-color:$bg-color;
 }
 
 .simple_text {
@@ -41,9 +10,9 @@ body {
 }
 
 .title_text {
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-bold);
-  font-family: var(--font-family-default);
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-default;
   text-transform: uppercase
 }
 
@@ -60,7 +29,7 @@ body {
   .header-block__name {
     //position: relative;
     font-size: 2em;
-    font-weight: var(--font-weight-bold);
+    font-weight: $font-weight-bold;
     text-align: center;
     font-family: "Comic Sans MS", sans-serif;
     color: whitesmoke;
@@ -144,17 +113,7 @@ body {
     text-align: center;
     @include padding-margin (1em, 1em);
     .aside-button__download {
-      font-size: 1.2em;
-      padding: 0.5em 0.5em;
-      color: whitesmoke;
-      border: 3px solid whitesmoke;
-      border-radius: 20px;
-      background-color: transparent;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      &:hover {
-        @include button-hover
-      }
+      @include button;
     }
   }
 }
@@ -171,23 +130,19 @@ body {
   /*margin-right: 15em;*/
 }
 
-.about-section {
-  width: 90%;
-  background-color: #313c42;
-  @include padding-margin (1em, 1em);
-}
+
 
 .about-box__name {
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-normal);
-  font-family: var(--font-family-default);
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+  font-family: $font-family-default;
   text-transform: uppercase;
 }
 
 .hello_text {
-  font-size: var(--font-size-large);
-  font-weight: var(--font-weight-normal);
-  font-family: var(--font-family-default);
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+  font-family: $font-family-default;
 }
 .about-section__inform {
   display: flex;
@@ -195,28 +150,28 @@ body {
   justify-content: space-between;
 }
 
+.about-section {
+  @include base-section;
+  //background-color: lighten($section-color, 30%);
+}
+
 .experience-section {
-  width: 90%;
-  background-color: #313c42;
-  @include padding-margin (1em, 1em);
+  @include base-section;
+  //background-color: darken($section-color, 30%);
 }
 
 .ed-section {
-  width: 90%;
-  background-color: #313c42;
-  @include padding-margin (1em, 1em);
+  @include base-section;
+  //background-color: rgba(15, 152, 0, 0.24);
 }
 
 .portfolio-section {
-  width: 90%;
-  background-color: #313c42;
-  @include padding-margin (1em, 1em);
+  @include base-section;
+  //background-color: mix(red,green,40%);
 }
 
 .contact-section {
-  width: 90%;
-  background-color: #313c42;
-  @include padding-margin (1em, 1em);
+  @include base-section;
 }
 
 .about-box__table {
@@ -224,16 +179,12 @@ body {
 }
 
 .about-section__box {
-  font-size: 1em;
-  font-weight: 400;
-  font-family: var(--font-family-default);
+  @include default-text;
 }
 
 .about-section__list {
   padding-right: 5em;
-  font-size: 1em;
-  font-weight: 400;
-  font-family: var(--font-family-default);
+  @include default-text;
 }
 
 input,
@@ -246,23 +197,13 @@ label {
   display: block;
 }
 
-.contact-form__button {
-  margin-top: 2em;
-  font-size: 0.7em;
-  padding: 0.5em 0.5em;
-  color: whitesmoke;
-  border: 3px solid whitesmoke;
-  border-radius: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  &:hover {
-    @include button-hover
-  }
+.button {
+  @include button;
 }
 
-.contact-form__button:hover {
-
+.button-primary {
+  @extend .button;
+  margin: 1em;
 }
 
 .contact-section__form {
@@ -270,7 +211,6 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 h3 {
@@ -297,44 +237,27 @@ h3 {
   min-width: 50vw;
 }
 
-.portfolio-section__pic1 {
-  /*float: left;*/
+.portfolio-section__pic {
   border: solid;
-}
-
-.portfolio-section__pic2 {
-  /*float: right;*/
-  border: solid;
-}
-
-.portfolio-section__pic3 {
-  /*float: left;*/
-  border: solid;
-}
-
-.portfolio-section__pic4 {
-  /*float: right;*/
-  border: solid;
+  height: 400px;
 }
 
 .ed-section__timeframe {
-  font-size: var(--font-family-large);
-  font-weight: var(--font-weight-normal);
-  font-family: var(--font-family-default);
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+  font-family: $font-family-default;
 }
 
 .experience-section__timeframe {
-  font-size: var(--font-family-large);
-  font-weight: var(--font-weight-normal);
-  font-family: var(--font-family-default);
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+  font-family: $font-family-default;
 }
 .abbr-style {
-  font-size: var(--font-family-large);
-  font-weight: var(--font-weight-bold);
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
   font-family: Tahoma, sans-serif;
 }
-
-
 
 /*@media screen and (max-width: 768px) {*/
 /*.contact-section {*/
