@@ -1,38 +1,43 @@
+@mixin button-hover {
+  background-color: whitesmoke;
+  color: black;
+  font-weight: bold;
+}
 
+@mixin padding-margin($padding, $margin) {
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin default-text {
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-family-default);
+}
 :root {
   --bg-color: #121f26;
-
   /* Padding Variables (for example) */
   --padding-small: 0.5 em;
   --padding-medium: 1em;
   --padding-large: 1.25em;
-
   /* Font Size Variables */
   --font-size-small: 0.75em;
   --font-size-medium: 1em;
-  --font-size-large: 2em;
-
+  --font-size-large: 1.5em;
   /* Font Weight Variables */
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-bold: 600;
-
   /*Font family variables */
   --font-family-default: Arial, sans-serif;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-}
 body {
   background-color: var(--bg-color);
 }
 
 .simple_text {
-  font-size: var(--font-size-medium);
-  font-weight: var(--font-weight-normal);
-  font-family: var(--font-family-default);
+  @include default-text;
 }
 
 .title_text {
@@ -42,26 +47,25 @@ body {
   text-transform: uppercase
 }
 
-.hello_text {
-  font-size: 1.5em;
-  font-weight: var(--font-weight-normal);
-  font-family: var(--font-family-default);
-}
+//.header {
+//  display: grid;
+//  grid-template-columns: 300px 1fr 100px;
+//}
 
-.about-box__name {
-  font-size: 1.5em;
-  font-weight: 400;
-  font-family: Arial, sans-serif;
-  text-transform: uppercase;
-}
+//.header-fix__block {
+//  grid-column-start: 1;
+//  grid-column-end: 2;
+//}
 
 .header-block__name {
-  position: relative;
+  //position: relative;
   font-size: 2em;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   text-align: center;
   font-family: "Comic Sans MS", sans-serif;
   color: whitesmoke;
+  //grid-column-start: 2;
+  //grid-column-end: 3;
 }
 
 .header-block__name::before {
@@ -88,13 +92,11 @@ body {
 .aside {
   position: fixed;
   width: 300px;
-  justify-items: center;
 }
 
 .aside-section {
   background-color: #1FA184;
-  padding: 1em;
-  margin: 1em;
+  @include padding-margin (1em, 1em);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -104,33 +106,44 @@ body {
   text-align: center;
   color: whitesmoke;
   font-family:'Aldrich', sans-serif;
-  font-size:1.2em ;
-  font-weight: 800;
+  font-size: 1.8em;
+  font-weight: 700;
   text-transform: uppercase;
-
 }
 
 .aside-section__text {
   text-align: center;
   color: #b5b3b3;
   font-size:1.5em ;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .aside-section__list {
-  margin-bottom: 0;
-  padding-left: 0;
-  text-align: center;
-  list-style-type: none;
-  font-size:1.2em ;
-  font-weight: 800;
+  width: 100%;
+  height: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aside-section__link {
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: #40382D;
+  box-shadow: inset 0 -5px 0 #40382D;
+}
+
+.aside-section__link:hover {
+  box-shadow: inset 0 -60px 0 #40382D, 2px 2px 3px rgba(0, 0, 0, 0.3);
+  color: #DECDA5;
 }
 
 .aside-button {
   background-color: #313c42;
   text-align: center;
-  padding: 1em;
-  margin: 1em;
+  @include padding-margin (1em, 1em);
 }
 .aside-button__download {
   font-size: 1.2em;
@@ -144,9 +157,7 @@ body {
 }
 
 .aside-button__download:hover {
-  background-color: whitesmoke;
-  color: black;
-  font-weight: bold;
+  @include button-hover
 }
 
 .main-avatar {
@@ -156,11 +167,6 @@ body {
   object-fit: cover;
 }
 
-/*.aside-main__box {*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(2, 100vh);*/
-/*    justify-content: center;*/
-/*}*/
 .main {
   display: flex;
   flex-direction: column;
@@ -174,54 +180,62 @@ body {
 .about-section {
   width: 90%;
   background-color: #313c42;
-  margin: 1em;
-  padding: 1em;
+  @include padding-margin (1em, 1em);
+}
 
+.about-box__name {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-family-default);
+  text-transform: uppercase;
+}
+
+.hello_text {
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-family-default);
 }
 .about-section__inform {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .experience-section {
   width: 90%;
   background-color: #313c42;
-  margin: 1em;
-  padding: 1em;
+  @include padding-margin (1em, 1em);
 }
 
 .ed-section {
   width: 90%;
   background-color: #313c42;
-  margin: 1em;
-  padding: 1em;
+  @include padding-margin (1em, 1em);
 }
 
 .portfolio-section {
   width: 90%;
   background-color: #313c42;
-  margin: 1em;
-  padding: 1em;
+  @include padding-margin (1em, 1em);
 }
 
 .contact-section {
   width: 90%;
   background-color: #313c42;
-  margin: 1em;
-  padding: 1em ;
+  @include padding-margin (1em, 1em);
+}
 
+.about-box__table {
+  border-spacing: 0.3em;
 }
 
 .about-section__box {
-  float: left;
   font-size: 1em;
   font-weight: 400;
   font-family: var(--font-family-default);
 }
 
 .about-section__list {
-  float: right;
   padding-right: 5em;
   font-size: 1em;
   font-weight: 400;
@@ -251,10 +265,9 @@ label {
 }
 
 .contact-form__button:hover {
-  background-color: whitesmoke;
-  color: black;
-  font-weight: bold;
+  @include button-hover
 }
+
 .contact-section__form {
   padding-left: 0;
   display: flex;
@@ -308,25 +321,23 @@ h3 {
 }
 
 .ed-section__timeframe {
-  font-size: 1.5em;
-  font-weight: 400;
-  font-family: Arial, sans-serif;
+  font-size: var(--font-family-large);
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-family-default);
 }
 
 .experience-section__timeframe {
-  font-size: 1.5em;
-  font-weight: 400;
-  font-family: Arial, sans-serif;
+  font-size: var(--font-family-large);
+  font-weight: var(--font-weight-normal);
+  font-family: var(--font-family-default);
 }
 .abbr-style {
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: var(--font-family-large);
+  font-weight: var(--font-weight-bold);
   font-family: Tahoma, sans-serif;
 }
 
-.about-box__table {
-  border-spacing: 0.3em;
-}
+
 
 /*@media screen and (max-width: 768px) {*/
 /*.contact-section {*/
@@ -351,16 +362,10 @@ h3 {
 /*    height: 15em;*/
 /*}*/
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .about-section__inform {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
   }
-  /*.portfolio-section__pic-box {*/
-  /*    display: grid;*/
-  /*    grid-template-columns: 90%;*/
-  /*    height: 50%;*/
-  /*}*/
-
 }
