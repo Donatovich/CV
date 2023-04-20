@@ -72,4 +72,8 @@
   //@include pulse-animation(0.3s, 1.0, 0.9);
 }
 
-
+@mixin timeframe-text {
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+  font-family: $font-family-default;
+}

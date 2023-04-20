@@ -17,11 +17,6 @@ body {
 }
 
 .header {
-  //display: flex;
-  //justify-content: space-between;
-  //align-items: center;
-  //background-color: #f5f5f5;
-  //padding: 20px;
   .header-fix__block {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -118,8 +113,6 @@ body {
   }
 }
 
-
-
 .main {
   display: flex;
   flex-direction: column;
@@ -127,10 +120,7 @@ body {
   color: whitesmoke;
   grid-column-start: 2;
   grid-column-end: 3;
-  /*margin-right: 15em;*/
 }
-
-
 
 .about-box__name {
   font-size: $font-size-large;
@@ -223,9 +213,9 @@ h3 {
 }
 
 .contact-section__header {
-  font-size: 1.5em;
-  font-weight: 400;
-  font-family: Arial, sans-serif;
+  font-size: $font-size-large;
+  font-weight: $font-weight-normal;
+  font-family: $font-family-default;
 }
 
 .portfolio-section__pic-box {
@@ -243,44 +233,18 @@ h3 {
 }
 
 .ed-section__timeframe {
-  font-size: $font-size-large;
-  font-weight: $font-weight-normal;
-  font-family: $font-family-default;
+  @include timeframe-text;
 }
 
 .experience-section__timeframe {
-  font-size: $font-size-large;
-  font-weight: $font-weight-normal;
-  font-family: $font-family-default;
+  @include timeframe-text;
 }
+
 .abbr-style {
   font-size: $font-size-large;
   font-weight: $font-weight-bold;
   font-family: Tahoma, sans-serif;
 }
-
-/*@media screen and (max-width: 768px) {*/
-/*.contact-section {*/
-/*    width: 32em;*/
-/*    background-color: red;*/
-/*}*/
-/*}*/
-
-/*.container {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*.item {*/
-/*    border: 3px solid red;*/
-/*    padding: 10px;*/
-/*    margin: 10px;*/
-/*    color: whitesmoke;*/
-/*    justify-content: center;*/
-/*    !*width: 10em;*!*/
-/*    height: 15em;*/
-/*}*/
 
 @media screen and (max-width: 1000px) {
   .about-section__inform {
