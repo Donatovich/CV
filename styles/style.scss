@@ -57,6 +57,7 @@ body {
     flex-direction: column;
     .aside-section__avatar {
       .main-avatar {
+        display: block;
         border-radius: 50%;
         width: 200px;
         height: 200px;
