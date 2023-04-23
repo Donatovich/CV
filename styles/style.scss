@@ -17,24 +17,6 @@ body {
   @include timeframe-text;
 }
 
-.header {
-  .header-block__name {
-    font-size: 2em;
-    font-weight: $font-weight-bold;
-    text-align: center;
-    font-family: "Comic Sans MS", sans-serif;
-    color: whitesmoke;
-    &::before {
-      content: "✌";
-      margin-right: 3px;
-    }
-    &::after {
-      content: "㋛";
-      margin-left: 7px;
-    }
-  }
-}
-
 .footer {
   text-align: center;
   font-family: "Comic Sans MS", sans-serif;

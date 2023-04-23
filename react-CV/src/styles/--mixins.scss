@@ -1,4 +1,4 @@
-@import "--variables";
+@import url('./src/styles/--variables.scss');
 @mixin button-hover {
   background-color: whitesmoke;
   color: black;

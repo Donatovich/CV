@@ -2,18 +2,17 @@ import { useState } from 'react'
 
 import './App.scss'
 import Aside from "./components/aside/Aside.jsx";
+import Header from "./components/header/Header";
+import AboutSection from "./components/aboutSection/AboutSection";
 function App() {
 
   return (
       <div className="article">
-          <header className="header">
-              <div className="header-block">
-                  <h1 className="header-block__name">Junior FE developer</h1>
-              </div>
-          </header>
+         <Header/>
           <div className="aside-main__box">
               <Aside/>
               <main className="main">
+                  <AboutSection/>
                   <section className="about-section">
                       <h3 className="about-section__name title_text">About me</h3>
                       <div className="about-section__text_box">

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "Aside.module.scss";
+import styles from "./Aside.module.scss";
 import avatar from "../../assets/images/avatar.jpg";
 import tgIcon from "../../assets/icons/tg.png";
 import fbIcon from "../../assets/icons/fb.png";
@@ -9,11 +9,11 @@ const Aside = () => {
     return (
             <aside className={styles.aside}>
                 <section className={styles.asideSection}>
-                    <div className={styles.asideSectionAvatar}>
+                    <div className={styles.asideSection__avatar}>
                         <img className={styles.mainAvatar} src={avatar} alt="avatar" title="24e.o."/>
                     </div>
-                    <h2 className={styles.asideSectionFullname}>Egor Ostrovskiy</h2>
-                    <p className={styles.asideSectionText}>Frontend developer</p>
+                    <h2 className={styles.asideSection__fullname}>Egor Ostrovskiy</h2>
+                    <p className={styles.asideSection__text}>Frontend developer</p>
                     <div className="aside-section__list">
                         <p className="aside-section__link">
 
