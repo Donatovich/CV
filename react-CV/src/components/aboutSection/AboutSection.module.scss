@@ -1,23 +1,24 @@
+@import "src/styles/mixins";
 .about-section {
-  //@include base-section;
+  @include base-section;
   .about-section__inform {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     .about-section__box {
-      //@include default-text;
+      @include default-text;
       .about-box__table {
         border-spacing: 0.3em;
       }
     }
     .about-section__list {
       padding-right: 5em;
-      //@include default-text;
+      @include default-text;
     }
     .about-box__name {
-      //font-size: $font-size-large;
+      font-size: $font-size-large;
       text-transform: uppercase;
-      //@include default-text;
+      @include default-text;
     }
   }
 }

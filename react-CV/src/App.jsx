@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import './App.scss'
+import './styles/App.module.scss'
 import Aside from "./components/aside/Aside.jsx";
 import Header from "./components/header/Header";
 import AboutSection from "./components/aboutSection/AboutSection";

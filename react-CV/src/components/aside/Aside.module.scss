@@ -1,10 +1,10 @@
-
-
+@import "src/styles/mixins";
 .aside {
   position: fixed;
   width: 300px;
   .aside-section {
     background-color: #1FA184;
+    @include padding-margin (1em, 1em);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -54,7 +54,9 @@
   .aside-button {
     background-color: #313c42;
     text-align: center;
+    @include padding-margin (1em, 1em);
     .aside-button__download {
+      @include button;
     }
   }
 }
