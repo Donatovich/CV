@@ -16,6 +16,13 @@
   font-family: $font-family-default;
 }
 
+@mixin title_text {
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-default;
+  text-transform: uppercase;
+}
+
 @mixin button {
       font-size: 1.2em;
       padding: 0.5em 0.5em;
@@ -43,26 +50,26 @@
   }
 }
 
-@mixin pulse-animation ($duration:1s, $size-from, $size-to) {
-  $frames: (
-          from:(
-                  transform: scale($size-from)
-          ),
-          to:(
-                  transform: scale($size-to)
-          ));
-  animation: pulse $duration infinite;
-  @keyframes pulse {
-    @each $key, $value in $frames {
-      #{$key} {
-        @each $property, $property-value in $value {
-          #{$property}: $property-value;
-        }
-      }
-    }
-
-  }
-}
+//@mixin pulse-animation ($duration:1s, $size-from, $size-to) {
+//  $frames: (
+//          from:(
+//                  transform: scale($size-from)
+//          ),
+//          to:(
+//                  transform: scale($size-to)
+//          ));
+//  animation: pulse $duration infinite;
+//  @keyframes pulse {
+//    @each $key, $value in $frames {
+//      #{$key} {
+//        @each $property, $property-value in $value {
+//          #{$property}: $property-value;
+//        }
+//      }
+//    }
+//
+//  }
+//}
 
 @mixin base-section {
   width: 90%;
