@@ -9,6 +9,7 @@ import EdSection from "./components/edSection/EdSection.jsx";
 import PortfolioSection from "./components/portfolioSection/PortfolioSection.jsx";
 import ContactSection from "./components/contactSection/ContactSection.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import styles from './styles/App.module.scss';
 function App() {
 
   return (
