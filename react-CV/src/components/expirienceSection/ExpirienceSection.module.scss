@@ -1,0 +1,10 @@
+@import "src/styles/mixins";
+@import "src/styles/variables";
+@import "src/styles/App.module";
+
+.experience-section {
+  @include base-section;
+  .experience-section__timeframe {
+    @include timeframe-text;
+  }
+}

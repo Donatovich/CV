@@ -17,33 +17,31 @@ const AboutSection = () => {
                     <h4 className={styles.aboutBox__name}>Personal information</h4>
                     <table className={styles.aboutBox__table}>
                         <tr>
-                            <td className="left_cell">FULL NAME</td>
-                            <td className="right_cell">Egor Ostrovskiy</td>
+                            <td>FULL NAME</td>
+                            <td>Egor Ostrovskiy</td>
                         </tr>
                         <tr>
-                            <td className="left_cell">D.O.B.</td>
-                            <td className="right_cell">
-                                <time>08 march 1994</time>
-                            </td>
+                            <td>D.O.B.</td>
+                            <td> <time>08 march 1994</time> </td>
                         </tr>
                         <tr>
-                            <td className="left_cell">ADDRESS</td>
-                            <td className="right_cell">220047, Belarus, Minsk, Ilimskaya 17, 74</td>
+                            <td>ADDRESS</td>
+                            <td>220047, Belarus, Minsk, Ilimskaya 17, 74</td>
                         </tr>
                         <tr>
-                            <td className="left_cell">E-MAIL</td>
-                            <td className="right_cell">astrouski1994@gmail.com</td>
+                            <td>E-MAIL</td>
+                            <td>astrouski1994@gmail.com</td>
                         </tr>
                         <tr>
-                            <td className="left_cell">PHONE</td>
-                            <td className="right_cell">+375-44-597-89-08</td>
+                            <td>PHONE</td>
+                            <td>+375-44-597-89-08</td>
                         </tr>
                     </table>
                 </div>
                 <div className={styles.aboutSection__list}>
                     <h4 className={styles.aboutBox__name}>Languages</h4>
                     <div className={styles.aboutBox__name}>
-                        <ul className={styles.aboutList}>
+                        <ul>
                             <li>English (B1/B2)</li>
                             <li>Russian (native)</li>
                             <li>Belorussian (native)</li>
@@ -51,7 +49,6 @@ const AboutSection = () => {
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };

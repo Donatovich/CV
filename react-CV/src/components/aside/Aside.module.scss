@@ -1,4 +1,7 @@
 @import "src/styles/mixins";
+@import "src/styles/variables";
+@import "src/styles/App.module";
+
 .aside {
   position: fixed;
   width: 300px;

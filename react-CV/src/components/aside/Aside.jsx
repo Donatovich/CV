@@ -26,7 +26,11 @@ const Aside = () => {
                         </p>
                         <p className={styles.asideSection__link}>
                             <a href="https://www.facebook.com/profile.php?id=100024575885419">
-                                <img src={fbIcon} width="40" height="40" alt=""/>
+                                <img
+                                    src={fbIcon}
+                                    width="40"
+                                    height="40"
+                                    alt=""/>
                             </a>
                         </p>
                         <p className={styles.asideSection__link}>
