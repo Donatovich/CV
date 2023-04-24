@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+.simpleText {
+  @include default-text;
+}
+
+.titleText {
+  @include title-text;
+}
+
+.helloText {
+  @include timeframe-text;
+}
+
+
+.button {
+  @include button;
+}
+
+.buttonPrimary {
+  @extend .button;
+  margin: 1em;
+}
+
+.abbrStyle {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  font-family: Tahoma, sans-serif;
+}

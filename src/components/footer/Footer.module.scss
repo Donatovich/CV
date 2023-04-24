@@ -1,0 +1,12 @@
+@import "src/styles/mixins";
+@import "src/styles/variables";
+@import "src/styles/App.module";
+
+.footer {
+  text-align: center;
+  font-family: "Comic Sans MS", sans-serif;
+  color: whitesmoke;
+  .footerText {
+
+  }
+}

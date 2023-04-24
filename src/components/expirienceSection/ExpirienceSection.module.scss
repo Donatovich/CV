@@ -1,0 +1,9 @@
+@import "src/styles/mixins";
+@import "src/styles/style";
+
+.experienceSection {
+  @include base-section;
+  .experienceSection__timeframe {
+    @include timeframe-text;
+  }
+}

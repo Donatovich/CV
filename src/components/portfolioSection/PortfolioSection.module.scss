@@ -1,0 +1,17 @@
+@import "src/styles/mixins";
+@import "src/styles/style";
+
+.portfolioSection {
+  @include base-section;
+  .itemBox {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 2em;
+    justify-content: center;
+    min-height: 50vh;
+    min-width: 50vw;
+    .itemBox__pic {
+      border: solid;
+    }
+  }
+}

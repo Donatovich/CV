@@ -1,0 +1,27 @@
+@import "src/styles/mixins";
+@import "src/styles/variables";
+@import "src/styles/style";
+
+.aboutSectionWrapper {
+  @include base-section;
+  .aboutSection__inform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .aboutSection__box {
+      @include default-text;
+      .about-box__table {
+        border-spacing: 0.3em;
+      }
+    }
+    .aboutSection__list {
+      padding-right: 5em;
+      @include default-text;
+    }
+    .aboutBox__name {
+      font-size: $font-size-large;
+      text-transform: uppercase;
+      @include default-text;
+    }
+  }
+}

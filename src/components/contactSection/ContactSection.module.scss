@@ -1,0 +1,24 @@
+@import "src/styles/mixins";
+@import "src/styles/style";
+
+.contactWrapper {
+  @include base-section;
+  .contactSection__form {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .contactSection__header {
+      @include default-text;
+      font-size: $font-size-large;
+    }
+    .baseForm {
+      .contactForm__box {
+        .contactForm__input {
+          padding-bottom: 2em;
+        }
+      }
+    }
+
+  }
+}
