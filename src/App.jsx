@@ -2,29 +2,31 @@ import './styles/App.module.scss'
 import Aside from "./components/aside/Aside.jsx";
 import Header from "./components/header/Header";
 import AboutSection from "./components/aboutSection/AboutSection";
-import ExpirienceSection from "./components/expirienceSection/ExpirienceSection.jsx";
+import ExperienceSection from "./components/expirienceSection/ExperienceSection.jsx";
 import EdSection from "./components/edSection/EdSection.jsx";
 import PortfolioSection from "./components/portfolioSection/PortfolioSection.jsx";
 import ContactSection from "./components/contactSection/ContactSection.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import styles from './styles/App.module.scss';
+import Layout from "./ui/layout/Layout.jsx";
+import Container from "./ui/container/Container.jsx";
 function App() {
 
   return (
-      <div>
+      <Layout>
          <Header/>
           <div className={styles.asideMain__box}>
               <Aside/>
-              <main className={styles.sections}>
+              <Container>
                   <AboutSection/>
-                  <ExpirienceSection/>
+                  <ExperienceSection/>
                   <EdSection/>
                   <PortfolioSection/>
                   <ContactSection/>
-              </main>
+              </Container>
           </div>
           <Footer/>
-      </div>
+      </Layout>
   )
 }
 

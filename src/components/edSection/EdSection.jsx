@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './EdSection.module.scss';
+import Title from "../../ui/title/Title.jsx";
 
 const EdSection = () => {
     return (
         <section className={styles.edSection}>
-            <h3 className={styles.titleText}>Education</h3>
+            <Title text="Education"/>
             <div>
                 <h4 className={styles.edSection__timeframe}>2009-2013</h4>
                 <p className={styles.simpleText}>Сonstruction technician of industrial and civil engineering

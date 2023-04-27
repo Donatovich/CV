@@ -1,10 +1,11 @@
 import React from 'react';
-import styles from './ExpirienceSection.module.scss';
+import styles from './ExperienceSection.module.scss';
+import Title from "../../ui/title/Title.jsx";
 
-const ExpirienceSection = () => {
+const ExperienceSection = () => {
     return (
         <section className={styles.experienceSection}>
-            <h3 className={styles.titleText}>Work experience</h3>
+            <Title text="Experience"/>
             <div className={styles.experienceSection__box}>
                 <h4 className={styles.experienceSection__timeframe}>2013-2018</h4>
                 <p className={styles.abbrStyle}><abbr title="Public Joint Stock Company 'Minskpromstroy'">JSC
@@ -32,4 +33,4 @@ const ExpirienceSection = () => {
     );
 };
 
-export default ExpirienceSection;
+export default ExperienceSection;

@@ -5,8 +5,12 @@ import tgIcon from "../../assets/icons/tg.png";
 import fbIcon from "../../assets/icons/fb.png";
 import vkIcon from "../../assets/icons/vk1.png";
 import ghIcon from "../../assets/icons/gh1.png";
+import Button from "../../ui/button/Button.jsx";
 
 const Aside = () => {
+    const handleDownload = () =>{
+        alert ("Warning")
+    }
     return (
             <aside className={styles.aside}>
                 <section className={styles.asideSection}>
@@ -54,7 +58,7 @@ const Aside = () => {
                     </div>
                 </section>
                 <div className={styles.asideButton}>
-                    <button className={styles.button}>Download this CV</button>
+                    <Button onClick={handleDownload} disabled={true} text={"Download"}/>
                 </div>
             </aside>
     );

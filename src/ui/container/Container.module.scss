@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: whitesmoke;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  max-width: 900px;
+}
