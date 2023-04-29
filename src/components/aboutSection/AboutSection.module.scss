@@ -4,6 +4,9 @@
 
 .aboutSectionWrapper {
   @include base-section;
+  .helloText {
+    @include minorTitle__text;
+  }
   .aboutSection__inform {
     display: flex;
     flex-direction: row;
@@ -17,13 +20,10 @@
     .aboutSection__list {
       @include default-text;
     }
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .about-section__inform {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
+    @media screen and (max-width: 1080px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+    }
   }
 }

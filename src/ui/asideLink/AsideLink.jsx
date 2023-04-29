@@ -1,13 +1,12 @@
 import React from 'react';
 import styles from './AsideLink.module.scss'
-const AsideLink = ({href, src, width, height, alt}) => {
+import InlineSVG from "react-inlinesvg";
+const AsideLink = ({href, src, alt}) => {
     return (
-        <span className={styles.asideSection__link}>
+        <span>
             <a href={href}>
-                <img className={styles.img}
+                <InlineSVG className={styles.svg}
                     src={src}
-                    width={width}
-                    height={height}
                     alt={alt}
                 />
             </a>

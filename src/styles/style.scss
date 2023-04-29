@@ -9,11 +9,6 @@
   @include title-text;
 }
 
-.helloText {
-  @include minorTitle__text;
-}
-
-
 .button {
   @include button;
 }
@@ -28,3 +23,4 @@
   font-weight: $font-weight-bold;
   font-family: Tahoma, sans-serif;
 }
+

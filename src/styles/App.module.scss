@@ -8,8 +8,13 @@ body {
 
 .asideMain__box {
   display: grid;
-  grid-template-columns: 300px 1fr 100px;
+  grid-template-columns: 300px 1fr;
   gap: 2em;
+  @media screen and (max-width: 900px){
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
 }
 
 .sections {
@@ -19,12 +24,4 @@ body {
   color: whitesmoke;
   grid-column-start: 2;
   grid-column-end: 3;
-}
-
-@media (max-width: 1000px) {
-  .about-section__inform {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-  }
 }

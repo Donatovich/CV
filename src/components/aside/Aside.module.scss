@@ -5,13 +5,18 @@
 .aside {
   position: fixed;
   display: block;
+  @media screen and (max-width: 900px){
+    position: relative;
+
+  }
   .asideSection {
     background-color: #1FA184;
     @include padding-margin (1em, 1em);
     display: flex;
     align-items: center;
     flex-direction: column;
-    .asideSection__avatar {
+    }
+      .asideSection__avatar {
       .mainAvatar {
         display: block;
         border-radius: 50%;
@@ -44,11 +49,10 @@
     }
   }
   .asideButton {
-    background-color: #313c42;
     text-align: center;
     @include padding-margin (1em, 1em);
     .aside-button__download {
       @include button;
     }
   }
-}
+

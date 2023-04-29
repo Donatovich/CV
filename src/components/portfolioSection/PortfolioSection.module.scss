@@ -10,6 +10,10 @@
     justify-content: center;
     min-height: 50vh;
     min-width: 50vw;
+    @media screen and (max-width: 900px){
+      display: grid;
+      grid-template-columns: 90%;
+    }
     .itemBox__pic {
       border: solid;
     }
