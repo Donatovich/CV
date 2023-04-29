@@ -1,29 +1,35 @@
 import React from 'react';
 import styles from './EdSection.module.scss';
 import Title from "../../ui/title/Title.jsx";
+import MinorTitle from "../../ui/minorTitle/MinorTitle.jsx";
+import SimpleText from "../../ui/simpleText/SimpleText.jsx";
+import Abbr from "../../ui/abbr/Abbr.jsx";
 
 const EdSection = () => {
     return (
         <section className={styles.edSection}>
             <Title text="Education"/>
             <div>
-                <h4 className={styles.edSection__timeframe}>2009-2013</h4>
-                <p className={styles.simpleText}>Сonstruction technician of industrial and civil engineering
-                    (full-time education)</p>
-                <p><abbr className={styles.abbrStyle}
-                         title="Educational Institution 'Minsk City College of Architecture and Civil Engineering'">EI'MGASK'</abbr>
-                </p>
+                <MinorTitle text="2009-2013"/>
+                <SimpleText text="Construction technician of industrial and civil engineering
+                    (full-time education)"/>
+                <Abbr
+                    title="Educational Institution 'Minsk City College of Architecture and Civil Engineering'"
+                    text="EI'MGASK'"
+                />
             </div>
             <div>
-                <h4 className={styles.edSection__timeframe}>2013-2019</h4>
-                <p className={styles.simpleText}>Сivil engineer of highways and airfields (extramural education)</p>
-                <p><abbr className={styles.abbrStyle} title="Belarusian National Technical University'">BNTU</abbr>
-                </p>
+                <MinorTitle text="2013-2019"/>
+                <SimpleText text="Civil engineer of highways and airfields (extramural education)"/>
+                <Abbr
+                    title="Belarusian National Technical University"
+                    text="BNTU"
+                />
             </div>
             <div>
-                <h4 className={styles.edSection__timeframe}>2023-</h4>
-                <p className={styles.simpleText}>Frontend developer</p>
-                <p className={styles.simpleText}>Training with a mentor</p>
+                <MinorTitle text="2023"/>
+                <SimpleText text="Frontend developer"/>
+                <SimpleText text="Training with a mentor"/>
             </div>
         </section>
     );

@@ -3,7 +3,4 @@
 
 .experienceSection {
   @include base-section;
-  .experienceSection__timeframe {
-    @include timeframe-text;
-  }
 }

@@ -6,7 +6,7 @@
     font-weight: bold;
     margin-bottom: 0.5em;
     .input {
-      border: 1px solid rgba(61, 52, 52, 0.74);
+      border: 2px solid rgba(58, 146, 121, 0.74);
       border-radius: 0.25em;
       display: block;
       width: 100%;
@@ -14,7 +14,7 @@
       font-size: 1em;
       &:focus {
         outline: none;
-        border-color: #070707;
+        border: 2px solid #070707;
       }
     }
   }

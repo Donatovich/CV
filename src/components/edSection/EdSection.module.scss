@@ -3,7 +3,4 @@
 
 .edSection {
   @include base-section;
-  .edSection__timeframe {
-    @include timeframe-text;
-  }
 }

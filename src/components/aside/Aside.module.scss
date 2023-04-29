@@ -4,7 +4,7 @@
 
 .aside {
   position: fixed;
-  width: 300px;
+  display: block;
   .asideSection {
     background-color: #1FA184;
     @include padding-margin (1em, 1em);
@@ -20,7 +20,7 @@
         object-fit: cover;
       }
     }
-    .asideSection__fullname {
+    .asideSection__fullName {
       text-align: center;
       color: whitesmoke;
       font-family:'Aldrich', sans-serif;
@@ -41,17 +41,6 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      .aside-section__link {
-        cursor: pointer;
-        transition: 0.3s;
-        border-radius: 10px;
-        color: #40382D;
-        box-shadow: inset 0 -5px 0 #40382D;
-        &:hover {
-          box-shadow: inset 0 -60px 0 #40382D, 2px 2px 3px rgba(0, 0, 0, 0.3);
-          color: #DECDA5;
-        }
-      }
     }
   }
   .asideButton {

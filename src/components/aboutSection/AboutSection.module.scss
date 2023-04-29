@@ -15,13 +15,15 @@
       }
     }
     .aboutSection__list {
-      padding-right: 5em;
       @include default-text;
     }
-    .aboutBox__name {
-      font-size: $font-size-large;
-      text-transform: uppercase;
-      @include default-text;
-    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section__inform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
   }
 }
